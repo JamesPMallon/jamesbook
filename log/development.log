@@ -24564,3 +24564,54 @@ Served asset /statuses.js - 304 Not Modified (0ms)
 
 Started GET "/assets/profiles.js?body=1" for 127.0.0.1 at 2014-05-27 15:56:28 +0100
 Served asset /profiles.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-27 16:40:02 +0100
+Processing by StatusesController#index as HTML
+  [1m[35mStatus Load (0.2ms)[0m  SELECT "statuses".* FROM "statuses" 
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  Rendered statuses/index.html.erb within layouts/application (11.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1
+Completed 200 OK in 17.6ms (Views: 16.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-05-27 16:40:02 +0100
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profiles.css?body=1" for 127.0.0.1 at 2014-05-27 16:40:02 +0100
+Served asset /profiles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-05-27 16:40:02 +0100
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-27 16:40:02 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-05-27 16:40:02 +0100
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-27 16:40:02 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profiles.js?body=1" for 127.0.0.1 at 2014-05-27 16:40:02 +0100
+Served asset /profiles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/statuses.css?body=1" for 127.0.0.1 at 2014-05-27 16:40:02 +0100
+Served asset /statuses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/statuses.js?body=1" for 127.0.0.1 at 2014-05-27 16:40:02 +0100
+Served asset /statuses.js - 304 Not Modified (0ms)
