@@ -2,3 +2,37 @@ Compiled application.js  (0ms)  (pid 75844)
 Compiled application.css  (0ms)  (pid 75844)
 Compiled application.js  (0ms)  (pid 75844)
 Compiled application.css  (0ms)  (pid 75844)
+Compiled jquery.js  (5ms)  (pid 15034)
+Compiled jquery_ujs.js  (0ms)  (pid 15034)
+Compiled bootstrap.js  (0ms)  (pid 15034)
+Compiled profiles.js  (108ms)  (pid 15034)
+Compiled statuses.js  (99ms)  (pid 15034)
+Compiled application.js  (259ms)  (pid 15034)
+Compiled bootstrap.css  (0ms)  (pid 15034)
+Warning. Error encountered while saving cache /Users/calligolimited/ruby-projects/jamesbook/tmp/cache/sass/ff17e1e13118d01b540c941aaf974b58b16fd6eb/profiles.css.scssc: can't dump anonymous class #<Class:0x007f9566c211d8>
+
+Compiled profiles.css  (10ms)  (pid 15034)
+Warning. Error encountered while saving cache /Users/calligolimited/ruby-projects/jamesbook/tmp/cache/sass/ff17e1e13118d01b540c941aaf974b58b16fd6eb/scaffolds.css.scssc: can't dump anonymous class #<Class:0x007f9566c211d8>
+
+Compiled scaffolds.css  (9ms)  (pid 15034)
+Warning. Error encountered while saving cache /Users/calligolimited/ruby-projects/jamesbook/tmp/cache/sass/ff17e1e13118d01b540c941aaf974b58b16fd6eb/statuses.css.scssc: can't dump anonymous class #<Class:0x007f9566c211d8>
+
+Compiled statuses.css  (3ms)  (pid 15034)
+Compiled application.css  (38ms)  (pid 15034)
+Compiled jquery.js  (5ms)  (pid 15034)
+Compiled jquery_ujs.js  (0ms)  (pid 15034)
+Compiled bootstrap.js  (1ms)  (pid 15034)
+Compiled profiles.js  (73ms)  (pid 15034)
+Compiled statuses.js  (61ms)  (pid 15034)
+Compiled application.js  (167ms)  (pid 15034)
+Compiled bootstrap.css  (0ms)  (pid 15034)
+Warning. Error encountered while saving cache /Users/calligolimited/ruby-projects/jamesbook/tmp/cache/sass/ff17e1e13118d01b540c941aaf974b58b16fd6eb/profiles.css.scssc: can't dump anonymous class #<Class:0x007fcb7d82bea0>
+
+Compiled profiles.css  (4ms)  (pid 15034)
+Warning. Error encountered while saving cache /Users/calligolimited/ruby-projects/jamesbook/tmp/cache/sass/ff17e1e13118d01b540c941aaf974b58b16fd6eb/scaffolds.css.scssc: can't dump anonymous class #<Class:0x007fcb7d82bea0>
+
+Compiled scaffolds.css  (11ms)  (pid 15034)
+Warning. Error encountered while saving cache /Users/calligolimited/ruby-projects/jamesbook/tmp/cache/sass/ff17e1e13118d01b540c941aaf974b58b16fd6eb/statuses.css.scssc: can't dump anonymous class #<Class:0x007fcb7d82bea0>
+
+Compiled statuses.css  (1ms)  (pid 15034)
+Compiled application.css  (38ms)  (pid 15034)
