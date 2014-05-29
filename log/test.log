@@ -2426,3 +2426,782 @@ Processing by StatusesController#update as HTML
 Redirected to http://test.host/statuses/980190962
 Completed 302 Found in 2.5ms (ActiveRecord: 0.2ms)
   [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.7ms)[0m  DELETE FROM "statuses"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id", "user_id") VALUES ('MyText', '2014-05-29 13:09:25', '2014-05-29 13:09:25', 980190962, 149087659)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id", "user_id") VALUES ('MyText', '2014-05-29 13:09:25', '2014-05-29 13:09:25', 298486374, 149087659)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id", "user_id") VALUES ('Hi I''m Jim', '2014-05-29 13:09:25', '2014-05-29 13:09:25', 113629430, 1027431151)[0m
+  [1m[35m (26.6ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM "statuses"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id", "user_id") VALUES ('MyText', '2014-05-29 13:10:04', '2014-05-29 13:10:04', 980190962, 149087659)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id", "user_id") VALUES ('MyText', '2014-05-29 13:10:04', '2014-05-29 13:10:04', 298486374, 149087659)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id", "user_id") VALUES ('Hi I''m Jim', '2014-05-29 13:10:04', '2014-05-29 13:10:04', 113629430, 1027431151)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "user_friendships"
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "user_friendships" ("created_at", "updated_at", "id") VALUES ('2014-05-29 13:10:04', '2014-05-29 13:10:04', 980190962)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "user_friendships" ("created_at", "updated_at", "id") VALUES ('2014-05-29 13:10:04', '2014-05-29 13:10:04', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "created_at", "updated_at", "id") VALUES ('Jason', 'Seifer', 'jason@teamtreehouse.com', 'jasonseifer', '2014-05-29 13:10:04', '2014-05-29 13:10:04', 149087659)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "created_at", "updated_at", "id") VALUES ('Jim', 'Hoskins', 'jim@teamtreehouse.com', 'jimhoskins', '2014-05-29 13:10:04', '2014-05-29 13:10:04', 1027431151)[0m
+  [1m[35m (1.8ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "statuses"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id", "user_id") VALUES ('MyText', '2014-05-29 13:10:24', '2014-05-29 13:10:24', 980190962, 149087659)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id", "user_id") VALUES ('MyText', '2014-05-29 13:10:24', '2014-05-29 13:10:24', 298486374, 149087659)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id", "user_id") VALUES ('Hi I''m Jim', '2014-05-29 13:10:24', '2014-05-29 13:10:24', 113629430, 1027431151)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "user_friendships"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "user_friendships" ("created_at", "updated_at", "id") VALUES ('2014-05-29 13:10:24', '2014-05-29 13:10:24', 980190962)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "user_friendships" ("created_at", "updated_at", "id") VALUES ('2014-05-29 13:10:24', '2014-05-29 13:10:24', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "created_at", "updated_at", "id") VALUES ('Jason', 'Seifer', 'jason@teamtreehouse.com', 'jasonseifer', '2014-05-29 13:10:24', '2014-05-29 13:10:24', 149087659)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "created_at", "updated_at", "id") VALUES ('Jim', 'Hoskins', 'jim@teamtreehouse.com', 'jimhoskins', '2014-05-29 13:10:24', '2014-05-29 13:10:24', 1027431151)[0m
+  [1m[35m (2.2ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM "statuses"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id", "user_id") VALUES ('MyText', '2014-05-29 13:10:51', '2014-05-29 13:10:51', 980190962, 149087659)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id", "user_id") VALUES ('MyText', '2014-05-29 13:10:51', '2014-05-29 13:10:51', 298486374, 149087659)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id", "user_id") VALUES ('Hi I''m Jim', '2014-05-29 13:10:51', '2014-05-29 13:10:51', 113629430, 1027431151)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "user_friendships"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "user_friendships" ("created_at", "updated_at", "id") VALUES ('2014-05-29 13:10:51', '2014-05-29 13:10:51', 980190962)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "user_friendships" ("created_at", "updated_at", "id") VALUES ('2014-05-29 13:10:51', '2014-05-29 13:10:51', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "created_at", "updated_at", "id") VALUES ('Jason', 'Seifer', 'jason@teamtreehouse.com', 'jasonseifer', '2014-05-29 13:10:51', '2014-05-29 13:10:51', 149087659)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "created_at", "updated_at", "id") VALUES ('Jim', 'Hoskins', 'jim@teamtreehouse.com', 'jimhoskins', '2014-05-29 13:10:51', '2014-05-29 13:10:51', 1027431151)[0m
+  [1m[35m (1.5ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM "statuses"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id", "user_id") VALUES ('MyText', '2014-05-29 13:11:34', '2014-05-29 13:11:34', 980190962, 149087659)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id", "user_id") VALUES ('MyText', '2014-05-29 13:11:34', '2014-05-29 13:11:34', 298486374, 149087659)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id", "user_id") VALUES ('Hi I''m Jim', '2014-05-29 13:11:34', '2014-05-29 13:11:34', 113629430, 1027431151)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "user_friendships"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "user_friendships" ("created_at", "updated_at", "id") VALUES ('2014-05-29 13:11:34', '2014-05-29 13:11:34', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "user_friendships" ("created_at", "updated_at", "id") VALUES ('2014-05-29 13:11:34', '2014-05-29 13:11:34', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "created_at", "updated_at", "id") VALUES ('Jason', 'Seifer', 'jason@teamtreehouse.com', 'jasonseifer', '2014-05-29 13:11:34', '2014-05-29 13:11:34', 149087659)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "created_at", "updated_at", "id") VALUES ('Jim', 'Hoskins', 'jim@teamtreehouse.com', 'jimhoskins', '2014-05-29 13:11:34', '2014-05-29 13:11:34', 1027431151)[0m
+  [1m[35m (2.1ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "statuses"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id", "user_id") VALUES ('MyText', '2014-05-29 13:12:08', '2014-05-29 13:12:08', 980190962, 149087659)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id", "user_id") VALUES ('MyText', '2014-05-29 13:12:08', '2014-05-29 13:12:08', 298486374, 149087659)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id", "user_id") VALUES ('Hi I''m Jim', '2014-05-29 13:12:08', '2014-05-29 13:12:08', 113629430, 1027431151)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "user_friendships"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "user_friendships" ("created_at", "updated_at", "id") VALUES ('2014-05-29 13:12:08', '2014-05-29 13:12:08', 980190962)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "user_friendships" ("created_at", "updated_at", "id") VALUES ('2014-05-29 13:12:08', '2014-05-29 13:12:08', 298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "created_at", "updated_at", "id") VALUES ('Jason', 'Seifer', 'jason@teamtreehouse.com', 'jasonseifer', '2014-05-29 13:12:08', '2014-05-29 13:12:08', 149087659)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "created_at", "updated_at", "id") VALUES ('Jim', 'Hoskins', 'jim@teamtreehouse.com', 'jimhoskins', '2014-05-29 13:12:08', '2014-05-29 13:12:08', 1027431151)[0m
+  [1m[35m (2.2ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "statuses"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id", "user_id") VALUES ('MyText', '2014-05-29 13:18:45', '2014-05-29 13:18:45', 980190962, 149087659)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id", "user_id") VALUES ('MyText', '2014-05-29 13:18:45', '2014-05-29 13:18:45', 298486374, 149087659)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id", "user_id") VALUES ('Hi I''m Jim', '2014-05-29 13:18:45', '2014-05-29 13:18:45', 113629430, 1027431151)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "user_friendships"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "user_friendships" ("created_at", "updated_at", "id") VALUES ('2014-05-29 13:18:45', '2014-05-29 13:18:45', 980190962)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "user_friendships" ("created_at", "updated_at", "id") VALUES ('2014-05-29 13:18:45', '2014-05-29 13:18:45', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "created_at", "updated_at", "id") VALUES ('Jason', 'Seifer', 'jason@teamtreehouse.com', 'jasonseifer', '2014-05-29 13:18:45', '2014-05-29 13:18:45', 149087659)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "created_at", "updated_at", "id") VALUES ('Jim', 'Hoskins', 'jim@teamtreehouse.com', 'jimhoskins', '2014-05-29 13:18:45', '2014-05-29 13:18:45', 1027431151)[0m
+  [1m[35m (1.4ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "statuses"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id", "user_id") VALUES ('MyText', '2014-05-29 13:21:44', '2014-05-29 13:21:44', 980190962, 149087659)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id", "user_id") VALUES ('MyText', '2014-05-29 13:21:44', '2014-05-29 13:21:44', 298486374, 149087659)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id", "user_id") VALUES ('Hi I''m Jim', '2014-05-29 13:21:44', '2014-05-29 13:21:44', 113629430, 1027431151)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "user_friendships"
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "user_friendships" ("created_at", "updated_at", "id") VALUES ('2014-05-29 13:21:44', '2014-05-29 13:21:44', 980190962)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "user_friendships" ("created_at", "updated_at", "id") VALUES ('2014-05-29 13:21:44', '2014-05-29 13:21:44', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "created_at", "updated_at", "id") VALUES ('Jason', 'Seifer', 'jason@teamtreehouse.com', 'jasonseifer', '2014-05-29 13:21:44', '2014-05-29 13:21:44', 149087659)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "created_at", "updated_at", "id") VALUES ('Jim', 'Hoskins', 'jim@teamtreehouse.com', 'jimhoskins', '2014-05-29 13:21:44', '2014-05-29 13:21:44', 1027431151)[0m
+  [1m[35m (2.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 149087659]]
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM "statuses"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id", "user_id") VALUES ('MyText', '2014-05-29 13:23:11', '2014-05-29 13:23:11', 980190962, 149087659)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id", "user_id") VALUES ('MyText', '2014-05-29 13:23:11', '2014-05-29 13:23:11', 298486374, 149087659)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id", "user_id") VALUES ('Hi I''m Jim', '2014-05-29 13:23:11', '2014-05-29 13:23:11', 113629430, 1027431151)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "user_friendships"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "user_friendships" ("created_at", "updated_at", "id", "user_id", "friend_id") VALUES ('2014-05-29 13:23:11', '2014-05-29 13:23:11', 980190962, 149087659, 1027431151)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "users"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "created_at", "updated_at", "id") VALUES ('Jason', 'Seifer', 'jason@teamtreehouse.com', 'jasonseifer', '2014-05-29 13:23:11', '2014-05-29 13:23:11', 149087659)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "created_at", "updated_at", "id") VALUES ('Jim', 'Hoskins', 'jim@teamtreehouse.com', 'jimhoskins', '2014-05-29 13:23:11', '2014-05-29 13:23:11', 1027431151)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "created_at", "updated_at", "id") VALUES ('Mike', 'The Frog', 'mike@teamtreehouse.com', 'mikethefrog', '2014-05-29 13:23:11', '2014-05-29 13:23:11', 350169046)[0m
+  [1m[35m (250.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 149087659]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 350169046]]
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "user_friendships" ("created_at", "friend_id", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["created_at", Thu, 29 May 2014 13:23:12 UTC +00:00], ["friend_id", 350169046], ["updated_at", Thu, 29 May 2014 13:23:12 UTC +00:00], ["user_id", 149087659]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM "statuses"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id", "user_id") VALUES ('MyText', '2014-05-29 13:25:02', '2014-05-29 13:25:02', 980190962, 149087659)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id", "user_id") VALUES ('MyText', '2014-05-29 13:25:02', '2014-05-29 13:25:02', 298486374, 149087659)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id", "user_id") VALUES ('Hi I''m Jim', '2014-05-29 13:25:02', '2014-05-29 13:25:02', 113629430, 1027431151)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "user_friendships"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "user_friendships" ("created_at", "updated_at", "id", "user_id", "friend_id") VALUES ('2014-05-29 13:25:02', '2014-05-29 13:25:02', 980190962, 149087659, 1027431151)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "users"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "created_at", "updated_at", "id") VALUES ('Jason', 'Seifer', 'jason@teamtreehouse.com', 'jasonseifer', '2014-05-29 13:25:02', '2014-05-29 13:25:02', 149087659)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "created_at", "updated_at", "id") VALUES ('Jim', 'Hoskins', 'jim@teamtreehouse.com', 'jimhoskins', '2014-05-29 13:25:02', '2014-05-29 13:25:02', 1027431151)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "created_at", "updated_at", "id") VALUES ('Mike', 'The Frog', 'mike@teamtreehouse.com', 'mikethefrog', '2014-05-29 13:25:02', '2014-05-29 13:25:02', 350169046)[0m
+  [1m[35m (23.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 149087659]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 350169046]]
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "user_friendships" ("created_at", "friend_id", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["created_at", Thu, 29 May 2014 13:25:02 UTC +00:00], ["friend_id", 350169046], ["updated_at", Thu, 29 May 2014 13:25:02 UTC +00:00], ["user_id", 149087659]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "statuses"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id", "user_id") VALUES ('MyText', '2014-05-29 13:31:35', '2014-05-29 13:31:35', 980190962, 149087659)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id", "user_id") VALUES ('MyText', '2014-05-29 13:31:35', '2014-05-29 13:31:35', 298486374, 149087659)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id", "user_id") VALUES ('My status', '2014-05-29 13:31:35', '2014-05-29 13:31:35', 113629430, 1027431151)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "user_friendships"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "user_friendships" ("created_at", "updated_at", "id", "user_id", "friend_id") VALUES ('2014-05-29 13:31:35', '2014-05-29 13:31:35', 980190962, 149087659, 1027431151)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "users"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "created_at", "updated_at", "id") VALUES ('Jason', 'Seifer', 'jason@teamtreehouse.com', 'jasonseifer', '2014-05-29 13:31:35', '2014-05-29 13:31:35', 149087659)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "created_at", "updated_at", "id") VALUES ('Jim', 'Hoskins', 'jim@teamtreehouse.com', 'jimhoskins', '2014-05-29 13:31:35', '2014-05-29 13:31:35', 1027431151)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "created_at", "updated_at", "id") VALUES ('Mike', 'The Frog', 'mike@teamtreehouse.com', 'mikethefrog', '2014-05-29 13:31:35', '2014-05-29 13:31:35', 350169046)[0m
+  [1m[35m (1.1ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 149087659]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 350169046]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "user_friendships" ("created_at", "friend_id", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["created_at", Thu, 29 May 2014 13:31:35 UTC +00:00], ["friend_id", 350169046], ["updated_at", Thu, 29 May 2014 13:31:35 UTC +00:00], ["user_id", 149087659]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "statuses"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id", "user_id") VALUES ('MyText', '2014-05-29 13:32:38', '2014-05-29 13:32:38', 980190962, 149087659)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id", "user_id") VALUES ('MyText', '2014-05-29 13:32:38', '2014-05-29 13:32:38', 298486374, 149087659)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id", "user_id") VALUES ('My status', '2014-05-29 13:32:38', '2014-05-29 13:32:38', 113629430, 1027431151)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "user_friendships"
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "user_friendships" ("created_at", "updated_at", "id", "user_id", "friend_id") VALUES ('2014-05-29 13:32:38', '2014-05-29 13:32:38', 980190962, 149087659, 1027431151)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "users"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "created_at", "updated_at", "id") VALUES ('Jason', 'Seifer', 'jason@teamtreehouse.com', 'jasonseifer', '2014-05-29 13:32:38', '2014-05-29 13:32:38', 149087659)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "created_at", "updated_at", "id") VALUES ('Jim', 'Hoskins', 'jim@teamtreehouse.com', 'jimhoskins', '2014-05-29 13:32:38', '2014-05-29 13:32:38', 1027431151)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "created_at", "updated_at", "id") VALUES ('Mike', 'The Frog', 'mike@teamtreehouse.com', 'mikethefrog', '2014-05-29 13:32:38', '2014-05-29 13:32:38', 350169046)[0m
+  [1m[35m (1.8ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM "statuses"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id", "user_id") VALUES ('MyText', '2014-05-29 13:35:17', '2014-05-29 13:35:17', 980190962, 149087659)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id", "user_id") VALUES ('MyText', '2014-05-29 13:35:17', '2014-05-29 13:35:17', 298486374, 149087659)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id", "user_id") VALUES ('My status', '2014-05-29 13:35:17', '2014-05-29 13:35:17', 113629430, 1027431151)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "user_friendships"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "user_friendships" ("created_at", "updated_at", "id", "user_id", "friend_id") VALUES ('2014-05-29 13:35:18', '2014-05-29 13:35:18', 980190962, 149087659, 1027431151)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "users"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "created_at", "updated_at", "id") VALUES ('Jason', 'Seifer', 'jason@teamtreehouse.com', 'jasonseifer', '2014-05-29 13:35:18', '2014-05-29 13:35:18', 149087659)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "created_at", "updated_at", "id") VALUES ('Jim', 'Hoskins', 'jim@teamtreehouse.com', 'jimhoskins', '2014-05-29 13:35:18', '2014-05-29 13:35:18', 1027431151)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "created_at", "updated_at", "id") VALUES ('Mike', 'The Frog', 'mike@teamtreehouse.com', 'mikethefrog', '2014-05-29 13:35:18', '2014-05-29 13:35:18', 350169046)[0m
+  [1m[35m (2.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 149087659]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 350169046]]
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "statuses"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id", "user_id") VALUES ('MyText', '2014-05-29 13:35:54', '2014-05-29 13:35:54', 980190962, 149087659)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id", "user_id") VALUES ('MyText', '2014-05-29 13:35:54', '2014-05-29 13:35:54', 298486374, 149087659)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id", "user_id") VALUES ('My status', '2014-05-29 13:35:54', '2014-05-29 13:35:54', 113629430, 1027431151)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "user_friendships"
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "user_friendships" ("created_at", "updated_at", "id", "user_id", "friend_id") VALUES ('2014-05-29 13:35:54', '2014-05-29 13:35:54', 980190962, 149087659, 1027431151)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "users"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "created_at", "updated_at", "id") VALUES ('Jason', 'Seifer', 'jason@teamtreehouse.com', 'jasonseifer', '2014-05-29 13:35:54', '2014-05-29 13:35:54', 149087659)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "created_at", "updated_at", "id") VALUES ('Jim', 'Hoskins', 'jim@teamtreehouse.com', 'jimhoskins', '2014-05-29 13:35:54', '2014-05-29 13:35:54', 1027431151)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "created_at", "updated_at", "id") VALUES ('Mike', 'The Frog', 'mike@teamtreehouse.com', 'mikethefrog', '2014-05-29 13:35:54', '2014-05-29 13:35:54', 350169046)[0m
+  [1m[35m (1.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 149087659]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 350169046]]
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "user_friendships" ("created_at", "friend_id", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["created_at", Thu, 29 May 2014 13:35:54 UTC +00:00], ["friend_id", 350169046], ["updated_at", Thu, 29 May 2014 13:35:54 UTC +00:00], ["user_id", 149087659]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (1.3ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "statuses"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id", "user_id") VALUES ('MyText', '2014-05-29 13:36:08', '2014-05-29 13:36:08', 980190962, 149087659)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id", "user_id") VALUES ('MyText', '2014-05-29 13:36:08', '2014-05-29 13:36:08', 298486374, 149087659)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id", "user_id") VALUES ('My status', '2014-05-29 13:36:08', '2014-05-29 13:36:08', 113629430, 1027431151)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "user_friendships"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "user_friendships" ("created_at", "updated_at", "id", "user_id", "friend_id") VALUES ('2014-05-29 13:36:08', '2014-05-29 13:36:08', 980190962, 149087659, 1027431151)[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "users"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "created_at", "updated_at", "id") VALUES ('Jason', 'Seifer', 'jason@teamtreehouse.com', 'jasonseifer', '2014-05-29 13:36:08', '2014-05-29 13:36:08', 149087659)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "created_at", "updated_at", "id") VALUES ('Jim', 'Hoskins', 'jim@teamtreehouse.com', 'jimhoskins', '2014-05-29 13:36:08', '2014-05-29 13:36:08', 1027431151)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "created_at", "updated_at", "id") VALUES ('Mike', 'The Frog', 'mike@teamtreehouse.com', 'mikethefrog', '2014-05-29 13:36:08', '2014-05-29 13:36:08', 350169046)[0m
+  [1m[35m (1.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 149087659]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 350169046]]
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.2ms)[0m  [1mINSERT INTO "user_friendships" ("created_at", "friend_id", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["created_at", Thu, 29 May 2014 13:36:08 UTC +00:00], ["friend_id", 350169046], ["updated_at", Thu, 29 May 2014 13:36:08 UTC +00:00], ["user_id", 149087659]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM "statuses"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id", "user_id") VALUES ('MyText', '2014-05-29 13:37:01', '2014-05-29 13:37:01', 980190962, 149087659)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id", "user_id") VALUES ('MyText', '2014-05-29 13:37:01', '2014-05-29 13:37:01', 298486374, 149087659)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id", "user_id") VALUES ('My status', '2014-05-29 13:37:01', '2014-05-29 13:37:01', 113629430, 1027431151)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "user_friendships"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "user_friendships" ("created_at", "updated_at", "id", "user_id", "friend_id") VALUES ('2014-05-29 13:37:01', '2014-05-29 13:37:01', 980190962, 149087659, 1027431151)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "users"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "created_at", "updated_at", "id") VALUES ('Jason', 'Seifer', 'jason@teamtreehouse.com', 'jasonseifer', '2014-05-29 13:37:01', '2014-05-29 13:37:01', 149087659)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "created_at", "updated_at", "id") VALUES ('Jim', 'Hoskins', 'jim@teamtreehouse.com', 'jimhoskins', '2014-05-29 13:37:01', '2014-05-29 13:37:01', 1027431151)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "created_at", "updated_at", "id") VALUES ('Mike', 'The Frog', 'mike@teamtreehouse.com', 'mikethefrog', '2014-05-29 13:37:01', '2014-05-29 13:37:01', 350169046)[0m
+  [1m[35m (2.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 149087659]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 350169046]]
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.1ms)[0m  [1mINSERT INTO "user_friendships" ("created_at", "friend_id", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["created_at", Thu, 29 May 2014 13:37:01 UTC +00:00], ["friend_id", 350169046], ["updated_at", Thu, 29 May 2014 13:37:01 UTC +00:00], ["user_id", 149087659]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.4ms)[0m  DELETE FROM "statuses"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id", "user_id") VALUES ('MyText', '2014-05-29 13:40:15', '2014-05-29 13:40:15', 980190962, 149087659)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id", "user_id") VALUES ('MyText', '2014-05-29 13:40:15', '2014-05-29 13:40:15', 298486374, 149087659)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id", "user_id") VALUES ('My status', '2014-05-29 13:40:15', '2014-05-29 13:40:15', 113629430, 1027431151)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "user_friendships"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "user_friendships" ("created_at", "updated_at", "id", "user_id", "friend_id") VALUES ('2014-05-29 13:40:15', '2014-05-29 13:40:15', 980190962, 149087659, 1027431151)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "users"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "created_at", "updated_at", "id") VALUES ('Jason', 'Seifer', 'jason@teamtreehouse.com', 'jasonseifer', '2014-05-29 13:40:15', '2014-05-29 13:40:15', 149087659)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "created_at", "updated_at", "id") VALUES ('Jim', 'Hoskins', 'jim@teamtreehouse.com', 'jimhoskins', '2014-05-29 13:40:15', '2014-05-29 13:40:15', 1027431151)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "created_at", "updated_at", "id") VALUES ('Mike', 'The Frog', 'mike@teamtreehouse.com', 'mikethefrog', '2014-05-29 13:40:15', '2014-05-29 13:40:15', 350169046)[0m
+  [1m[35m (1.3ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 149087659]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 350169046]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "user_friendships" ("created_at", "friend_id", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["created_at", Thu, 29 May 2014 13:40:15 UTC +00:00], ["friend_id", 350169046], ["updated_at", Thu, 29 May 2014 13:40:15 UTC +00:00], ["user_id", 149087659]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.4ms)[0m  DELETE FROM "statuses"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id", "user_id") VALUES ('MyText', '2014-05-29 13:40:25', '2014-05-29 13:40:25', 980190962, 149087659)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id", "user_id") VALUES ('MyText', '2014-05-29 13:40:25', '2014-05-29 13:40:25', 298486374, 149087659)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id", "user_id") VALUES ('My status', '2014-05-29 13:40:25', '2014-05-29 13:40:25', 113629430, 1027431151)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "user_friendships"
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "user_friendships" ("created_at", "updated_at", "id", "user_id", "friend_id") VALUES ('2014-05-29 13:40:25', '2014-05-29 13:40:25', 980190962, 149087659, 1027431151)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "users"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "created_at", "updated_at", "id") VALUES ('Jason', 'Seifer', 'jason@teamtreehouse.com', 'jasonseifer', '2014-05-29 13:40:25', '2014-05-29 13:40:25', 149087659)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "created_at", "updated_at", "id") VALUES ('Jim', 'Hoskins', 'jim@teamtreehouse.com', 'jimhoskins', '2014-05-29 13:40:25', '2014-05-29 13:40:25', 1027431151)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "created_at", "updated_at", "id") VALUES ('Mike', 'The Frog', 'mike@teamtreehouse.com', 'mikethefrog', '2014-05-29 13:40:25', '2014-05-29 13:40:25', 350169046)[0m
+  [1m[35m (2.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."profile_name" IS NULL LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."profile_name" IS NULL LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."profile_name" IS NULL LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'jason2@teamtreehouse.com' LIMIT 1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."profile_name" = 'jasonseifer_1' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."email" = 'jason2@teamtreehouse.com' LIMIT 1
+  [1m[36mUser Exists (0.0ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."profile_name" = 'Contains spaces' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 149087659]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."profile_name" = 'jasonseifer' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "statuses"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id", "user_id") VALUES ('MyText', '2014-05-29 13:40:55', '2014-05-29 13:40:55', 980190962, 149087659)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id", "user_id") VALUES ('MyText', '2014-05-29 13:40:55', '2014-05-29 13:40:55', 298486374, 149087659)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id", "user_id") VALUES ('My status', '2014-05-29 13:40:55', '2014-05-29 13:40:55', 113629430, 1027431151)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "user_friendships"
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "user_friendships" ("created_at", "updated_at", "id", "user_id", "friend_id") VALUES ('2014-05-29 13:40:55', '2014-05-29 13:40:55', 980190962, 149087659, 1027431151)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "users"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "created_at", "updated_at", "id") VALUES ('Jason', 'Seifer', 'jason@teamtreehouse.com', 'jasonseifer', '2014-05-29 13:40:55', '2014-05-29 13:40:55', 149087659)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "created_at", "updated_at", "id") VALUES ('Jim', 'Hoskins', 'jim@teamtreehouse.com', 'jimhoskins', '2014-05-29 13:40:55', '2014-05-29 13:40:55', 1027431151)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "created_at", "updated_at", "id") VALUES ('Mike', 'The Frog', 'mike@teamtreehouse.com', 'mikethefrog', '2014-05-29 13:40:55', '2014-05-29 13:40:55', 350169046)[0m
+  [1m[35m (2.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."profile_name" IS NULL LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."profile_name" IS NULL LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."profile_name" IS NULL LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'jason2@teamtreehouse.com' LIMIT 1[0m
+  [1m[35mUser Exists (0.0ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."profile_name" = 'jasonseifer_1' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 149087659]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."profile_name" = 'jasonseifer' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM "statuses"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id", "user_id") VALUES ('MyText', '2014-05-29 13:41:35', '2014-05-29 13:41:35', 980190962, 149087659)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id", "user_id") VALUES ('MyText', '2014-05-29 13:41:35', '2014-05-29 13:41:35', 298486374, 149087659)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id", "user_id") VALUES ('My status', '2014-05-29 13:41:35', '2014-05-29 13:41:35', 113629430, 1027431151)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "user_friendships"
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "user_friendships" ("created_at", "updated_at", "id", "user_id", "friend_id") VALUES ('2014-05-29 13:41:35', '2014-05-29 13:41:35', 980190962, 149087659, 1027431151)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "users"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "created_at", "updated_at", "id") VALUES ('Jason', 'Seifer', 'jason@teamtreehouse.com', 'jasonseifer', '2014-05-29 13:41:35', '2014-05-29 13:41:35', 149087659)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "created_at", "updated_at", "id") VALUES ('Jim', 'Hoskins', 'jim@teamtreehouse.com', 'jimhoskins', '2014-05-29 13:41:35', '2014-05-29 13:41:35', 1027431151)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "created_at", "updated_at", "id") VALUES ('Mike', 'The Frog', 'mike@teamtreehouse.com', 'mikethefrog', '2014-05-29 13:41:35', '2014-05-29 13:41:35', 350169046)[0m
+  [1m[35m (2.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."profile_name" IS NULL LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."profile_name" IS NULL LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."profile_name" IS NULL LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'jason2@teamtreehouse.com' LIMIT 1[0m
+  [1m[35mUser Exists (0.0ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."profile_name" = 'jasonseifer_1' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 149087659]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."profile_name" = 'jasonseifer' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM "statuses"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id", "user_id") VALUES ('MyText', '2014-05-29 13:41:56', '2014-05-29 13:41:56', 980190962, 149087659)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id", "user_id") VALUES ('MyText', '2014-05-29 13:41:56', '2014-05-29 13:41:56', 298486374, 149087659)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id", "user_id") VALUES ('My status', '2014-05-29 13:41:56', '2014-05-29 13:41:56', 113629430, 1027431151)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "user_friendships"
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "user_friendships" ("created_at", "updated_at", "id", "user_id", "friend_id") VALUES ('2014-05-29 13:41:56', '2014-05-29 13:41:56', 980190962, 149087659, 1027431151)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "users"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "created_at", "updated_at", "id") VALUES ('Jason', 'Seifer', 'jason@teamtreehouse.com', 'jasonseifer', '2014-05-29 13:41:56', '2014-05-29 13:41:56', 149087659)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "created_at", "updated_at", "id") VALUES ('Jim', 'Hoskins', 'jim@teamtreehouse.com', 'jimhoskins', '2014-05-29 13:41:56', '2014-05-29 13:41:56', 1027431151)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "created_at", "updated_at", "id") VALUES ('Mike', 'The Frog', 'mike@teamtreehouse.com', 'mikethefrog', '2014-05-29 13:41:56', '2014-05-29 13:41:56', 350169046)[0m
+  [1m[35m (1.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."profile_name" IS NULL LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."profile_name" IS NULL LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."profile_name" IS NULL LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'jason2@teamtreehouse.com' LIMIT 1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."profile_name" = 'jasonseifer_1' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 149087659]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."profile_name" = 'jasonseifer' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM "statuses"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id", "user_id") VALUES ('MyText', '2014-05-29 13:43:03', '2014-05-29 13:43:03', 980190962, 149087659)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id", "user_id") VALUES ('MyText', '2014-05-29 13:43:03', '2014-05-29 13:43:03', 298486374, 149087659)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id", "user_id") VALUES ('My status', '2014-05-29 13:43:03', '2014-05-29 13:43:03', 113629430, 1027431151)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "user_friendships"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "user_friendships" ("created_at", "updated_at", "id", "user_id", "friend_id") VALUES ('2014-05-29 13:43:03', '2014-05-29 13:43:03', 980190962, 149087659, 1027431151)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "users"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "created_at", "updated_at", "id") VALUES ('Jason', 'Seifer', 'jason@teamtreehouse.com', 'jasonseifer', '2014-05-29 13:43:03', '2014-05-29 13:43:03', 149087659)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "created_at", "updated_at", "id") VALUES ('Jim', 'Hoskins', 'jim@teamtreehouse.com', 'jimhoskins', '2014-05-29 13:43:03', '2014-05-29 13:43:03', 1027431151)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "created_at", "updated_at", "id") VALUES ('Mike', 'The Frog', 'mike@teamtreehouse.com', 'mikethefrog', '2014-05-29 13:43:03', '2014-05-29 13:43:03', 350169046)[0m
+  [1m[35m (1.3ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."profile_name" IS NULL LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."profile_name" IS NULL LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."profile_name" IS NULL LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'jason2@teamtreehouse.com' LIMIT 1[0m
+  [1m[35mUser Exists (0.0ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."profile_name" = 'jasonseifer_1' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 149087659]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."profile_name" = 'jasonseifer' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "statuses"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id", "user_id") VALUES ('MyText', '2014-05-29 13:45:05', '2014-05-29 13:45:05', 980190962, 149087659)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id", "user_id") VALUES ('MyText', '2014-05-29 13:45:05', '2014-05-29 13:45:05', 298486374, 149087659)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id", "user_id") VALUES ('My status', '2014-05-29 13:45:05', '2014-05-29 13:45:05', 113629430, 1027431151)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "user_friendships"
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "user_friendships" ("created_at", "updated_at", "id", "user_id", "friend_id") VALUES ('2014-05-29 13:45:05', '2014-05-29 13:45:05', 980190962, 149087659, 1027431151)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "users"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "created_at", "updated_at", "id") VALUES ('Jason', 'Seifer', 'jason@teamtreehouse.com', 'jasonseifer', '2014-05-29 13:45:05', '2014-05-29 13:45:05', 149087659)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "created_at", "updated_at", "id") VALUES ('Jim', 'Hoskins', 'jim@teamtreehouse.com', 'jimhoskins', '2014-05-29 13:45:05', '2014-05-29 13:45:05', 1027431151)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "created_at", "updated_at", "id") VALUES ('Mike', 'The Frog', 'mike@teamtreehouse.com', 'mikethefrog', '2014-05-29 13:45:05', '2014-05-29 13:45:05', 350169046)[0m
+  [1m[35m (1.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."profile_name" IS NULL LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."profile_name" IS NULL LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."profile_name" IS NULL LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'jason2@teamtreehouse.com' LIMIT 1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."profile_name" = 'jasonseifer_1' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 149087659]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."profile_name" = 'jasonseifer' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM "statuses"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id", "user_id") VALUES ('MyText', '2014-05-29 13:45:38', '2014-05-29 13:45:38', 980190962, 149087659)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id", "user_id") VALUES ('MyText', '2014-05-29 13:45:38', '2014-05-29 13:45:38', 298486374, 149087659)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id", "user_id") VALUES ('My status', '2014-05-29 13:45:38', '2014-05-29 13:45:38', 113629430, 1027431151)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "user_friendships"
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "user_friendships" ("created_at", "updated_at", "id", "user_id", "friend_id") VALUES ('2014-05-29 13:45:38', '2014-05-29 13:45:38', 980190962, 149087659, 1027431151)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "users"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "created_at", "updated_at", "id") VALUES ('Jason', 'Seifer', 'jason@teamtreehouse.com', 'jasonseifer', '2014-05-29 13:45:38', '2014-05-29 13:45:38', 149087659)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "created_at", "updated_at", "id") VALUES ('Jim', 'Hoskins', 'jim@teamtreehouse.com', 'jimhoskins', '2014-05-29 13:45:38', '2014-05-29 13:45:38', 1027431151)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "created_at", "updated_at", "id") VALUES ('Mike', 'The Frog', 'mike@teamtreehouse.com', 'mikethefrog', '2014-05-29 13:45:38', '2014-05-29 13:45:38', 350169046)[0m
+  [1m[35m (1.5ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."profile_name" IS NULL LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."profile_name" IS NULL LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."profile_name" IS NULL LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'jason2@teamtreehouse.com' LIMIT 1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."profile_name" = 'jasonseifer_1' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 149087659]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."profile_name" = 'jasonseifer' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 149087659]]
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.4ms)[0m  DELETE FROM "statuses"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id", "user_id") VALUES ('MyText', '2014-05-29 13:48:25', '2014-05-29 13:48:25', 980190962, 149087659)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id", "user_id") VALUES ('MyText', '2014-05-29 13:48:25', '2014-05-29 13:48:25', 298486374, 149087659)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id", "user_id") VALUES ('My status', '2014-05-29 13:48:25', '2014-05-29 13:48:25', 113629430, 1027431151)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "user_friendships"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "user_friendships" ("created_at", "updated_at", "id", "user_id", "friend_id") VALUES ('2014-05-29 13:48:25', '2014-05-29 13:48:25', 980190962, 149087659, 1027431151)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "users"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "created_at", "updated_at", "id") VALUES ('Jason', 'Seifer', 'jason@teamtreehouse.com', 'jasonseifer', '2014-05-29 13:48:25', '2014-05-29 13:48:25', 149087659)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "created_at", "updated_at", "id") VALUES ('Jim', 'Hoskins', 'jim@teamtreehouse.com', 'jimhoskins', '2014-05-29 13:48:25', '2014-05-29 13:48:25', 1027431151)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "created_at", "updated_at", "id") VALUES ('Mike', 'The Frog', 'mike@teamtreehouse.com', 'mikethefrog', '2014-05-29 13:48:25', '2014-05-29 13:48:25', 350169046)[0m
+  [1m[35m (32.8ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."profile_name" IS NULL LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."profile_name" IS NULL LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."profile_name" IS NULL LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'jason2@teamtreehouse.com' LIMIT 1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."profile_name" = 'jasonseifer_1' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 149087659]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."profile_name" = 'jasonseifer' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 149087659]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 350169046]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "user_friendships" ("created_at", "friend_id", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Thu, 29 May 2014 13:48:26 UTC +00:00], ["friend_id", 350169046], ["updated_at", Thu, 29 May 2014 13:48:26 UTC +00:00], ["user_id", 149087659]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" INNER JOIN "user_friendships" ON "users"."id" = "user_friendships"."friend_id" WHERE "user_friendships"."user_id" = 149087659
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 149087659]]
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "statuses"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id", "user_id") VALUES ('MyText', '2014-05-29 13:51:10', '2014-05-29 13:51:10', 980190962, 149087659)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id", "user_id") VALUES ('MyText', '2014-05-29 13:51:10', '2014-05-29 13:51:10', 298486374, 149087659)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id", "user_id") VALUES ('My status', '2014-05-29 13:51:10', '2014-05-29 13:51:10', 113629430, 1027431151)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "user_friendships"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "user_friendships" ("created_at", "updated_at", "id", "user_id", "friend_id") VALUES ('2014-05-29 13:51:10', '2014-05-29 13:51:10', 980190962, 149087659, 1027431151)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "users"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "created_at", "updated_at", "id") VALUES ('Jason', 'Seifer', 'jason@teamtreehouse.com', 'jasonseifer', '2014-05-29 13:51:10', '2014-05-29 13:51:10', 149087659)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "created_at", "updated_at", "id") VALUES ('Jim', 'Hoskins', 'jim@teamtreehouse.com', 'jimhoskins', '2014-05-29 13:51:10', '2014-05-29 13:51:10', 1027431151)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "created_at", "updated_at", "id") VALUES ('Mike', 'The Frog', 'mike@teamtreehouse.com', 'mikethefrog', '2014-05-29 13:51:10', '2014-05-29 13:51:10', 350169046)[0m
+  [1m[35m (1.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."profile_name" IS NULL LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."profile_name" IS NULL LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."profile_name" IS NULL LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'jason2@teamtreehouse.com' LIMIT 1[0m
+  [1m[35mUser Exists (0.0ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."profile_name" = 'jasonseifer_1' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 149087659]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."profile_name" = 'jasonseifer' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 149087659]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 350169046]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.2ms)[0m  INSERT INTO "user_friendships" ("created_at", "friend_id", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Thu, 29 May 2014 13:51:10 UTC +00:00], ["friend_id", 350169046], ["updated_at", Thu, 29 May 2014 13:51:10 UTC +00:00], ["user_id", 149087659]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" INNER JOIN "user_friendships" ON "users"."id" = "user_friendships"."friend_id" WHERE "user_friendships"."user_id" = 149087659 AND "users"."id" = 350169046 LIMIT 1
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 149087659]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 350169046]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "user_friendships" ("created_at", "friend_id", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Thu, 29 May 2014 13:51:10 UTC +00:00], ["friend_id", 350169046], ["updated_at", Thu, 29 May 2014 13:51:10 UTC +00:00], ["user_id", 149087659]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" INNER JOIN "user_friendships" ON "users"."id" = "user_friendships"."friend_id" WHERE "user_friendships"."user_id" = 149087659
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 149087659]]
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.4ms)[0m  DELETE FROM "statuses"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id", "user_id") VALUES ('MyText', '2014-05-29 13:51:39', '2014-05-29 13:51:39', 980190962, 149087659)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id", "user_id") VALUES ('MyText', '2014-05-29 13:51:39', '2014-05-29 13:51:39', 298486374, 149087659)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id", "user_id") VALUES ('My status', '2014-05-29 13:51:39', '2014-05-29 13:51:39', 113629430, 1027431151)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "user_friendships"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "user_friendships" ("created_at", "updated_at", "id", "user_id", "friend_id") VALUES ('2014-05-29 13:51:39', '2014-05-29 13:51:39', 980190962, 149087659, 1027431151)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "users"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "created_at", "updated_at", "id") VALUES ('Jason', 'Seifer', 'jason@teamtreehouse.com', 'jasonseifer', '2014-05-29 13:51:39', '2014-05-29 13:51:39', 149087659)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "created_at", "updated_at", "id") VALUES ('Jim', 'Hoskins', 'jim@teamtreehouse.com', 'jimhoskins', '2014-05-29 13:51:39', '2014-05-29 13:51:39', 1027431151)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "created_at", "updated_at", "id") VALUES ('Mike', 'The Frog', 'mike@teamtreehouse.com', 'mikethefrog', '2014-05-29 13:51:39', '2014-05-29 13:51:39', 350169046)[0m
+  [1m[35m (257.4ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 149087659]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 350169046]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "user_friendships" ("created_at", "friend_id", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["created_at", Thu, 29 May 2014 13:51:40 UTC +00:00], ["friend_id", 350169046], ["updated_at", Thu, 29 May 2014 13:51:40 UTC +00:00], ["user_id", 149087659]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m

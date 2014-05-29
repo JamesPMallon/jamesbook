@@ -10,6 +10,10 @@ gem 'devise', github: 'plataformatec/devise'
 gem 'simple_form'
 
 
+group :test do
+ gem 'shoulda'
+end
+
 
 
 group :development, :test do
@@ -34,6 +38,7 @@ group :assets do
 end
 
 gem 'jquery-rails'
+
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

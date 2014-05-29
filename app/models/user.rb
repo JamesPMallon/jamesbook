@@ -19,11 +19,16 @@ class User < ActiveRecord::Base
                               message: 'must be formatted correctly'
                             }
 
+
+#STATUS RELATIONSHIPS
+
   has_many :statuses
 
   def full_name
   	first_name + " " + last_name
   end
+
+  #GRAVATAR
 
   def gravatar_url
     stripped_email = email.strip
@@ -33,4 +38,8 @@ class User < ActiveRecord::Base
     "http://gravatar.com/avatar/#{hash}?d=mm"
   end
 
+
+  #FRIENDSHIPS
+has_many :user_friendships
+has_many :friends, through: :user_friendships
 end
