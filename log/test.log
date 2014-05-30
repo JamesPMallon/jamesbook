@@ -5417,3 +5417,262 @@ Redirected to http://www.example.com/
 Filter chain halted as :verify_signed_out_user rendered or redirected
 Completed 302 Found in 0.8ms (ActiveRecord: 0.0ms)
   [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.4ms)[0m  DELETE FROM "statuses"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id", "user_id") VALUES ('MyText', '2014-05-30 15:00:50', '2014-05-30 15:00:50', 980190962, 149087659)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id", "user_id") VALUES ('MyText', '2014-05-30 15:00:50', '2014-05-30 15:00:50', 298486374, 149087659)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id", "user_id") VALUES ('My status', '2014-05-30 15:00:50', '2014-05-30 15:00:50', 113629430, 1027431151)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "user_friendships"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "user_friendships" ("created_at", "updated_at", "id", "user_id", "friend_id") VALUES ('2014-05-30 15:00:50', '2014-05-30 15:00:50', 980190962, 149087659, 1027431151)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "users"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "created_at", "updated_at", "id") VALUES ('Jason', 'Seifer', 'jason@teamtreehouse.com', 'jasonseifer', '2014-05-30 15:00:50', '2014-05-30 15:00:50', 149087659)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "created_at", "updated_at", "id") VALUES ('Jim', 'Hoskins', 'jim@teamtreehouse.com', 'jimhoskins', '2014-05-30 15:00:50', '2014-05-30 15:00:50', 1027431151)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "created_at", "updated_at", "id") VALUES ('Mike', 'The Frog', 'mike@teamtreehouse.com', 'mikethefrog', '2014-05-30 15:00:50', '2014-05-30 15:00:50', 350169046)[0m
+  [1m[35m (9.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 149087659]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 350169046]]
+Processing by UserFriendshipsController#create as HTML
+  Parameters: {"friend_id"=>"350169046"}
+Redirected to http://test.host/
+Completed 302 Found in 0.5ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 149087659]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 350169046]]
+Processing by UserFriendshipsController#create as HTML
+  Parameters: {"friend_id"=>"350169046"}
+Redirected to http://test.host/
+Completed 302 Found in 0.2ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 149087659]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 350169046]]
+Processing by UserFriendshipsController#create as HTML
+  Parameters: {"friend_id"=>"350169046"}
+Redirected to http://test.host/
+Completed 302 Found in 0.2ms (ActiveRecord: 0.0ms)
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" INNER JOIN "user_friendships" ON "users"."id" = "user_friendships"."friend_id" WHERE "user_friendships"."user_id" = 149087659 AND "users"."id" = 350169046 LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 149087659]]
+Processing by UserFriendshipsController#create as HTML
+Redirected to http://test.host/
+Completed 302 Found in 0.2ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 149087659]]
+Processing by UserFriendshipsController#create as HTML
+Redirected to http://test.host/
+Completed 302 Found in 0.2ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Processing by UserFriendshipsController#new as HTML
+Completed 401 Unauthorized in 1.3ms
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 149087659]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1027431151]]
+Processing by UserFriendshipsController#new as HTML
+  Parameters: {"friend_id"=>"1027431151"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 149087659 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."profile_name" = '1027431151' LIMIT 1
+Completed 404 Not Found in 7.4ms (Views: 5.4ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 149087659]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1027431151]]
+Processing by UserFriendshipsController#new as HTML
+  Parameters: {"friend_id"=>"1027431151"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 149087659 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."profile_name" = '1027431151' LIMIT 1
+Completed 404 Not Found in 2.3ms (Views: 1.4ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 149087659]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1027431151]]
+Processing by UserFriendshipsController#new as HTML
+  Parameters: {"friend_id"=>"1027431151"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 149087659 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."profile_name" = '1027431151' LIMIT 1
+Completed 404 Not Found in 2.4ms (Views: 1.4ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 149087659]]
+Processing by UserFriendshipsController#new as HTML
+  Parameters: {"friend_id"=>"invalid"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 149087659 LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."profile_name" = 'invalid' LIMIT 1[0m
+Completed 404 Not Found in 2.2ms (Views: 1.3ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 149087659]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1027431151]]
+Processing by UserFriendshipsController#new as HTML
+  Parameters: {"friend_id"=>"1027431151"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 149087659 LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."profile_name" = '1027431151' LIMIT 1[0m
+Completed 404 Not Found in 3.8ms (Views: 2.3ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 149087659]]
+Processing by UserFriendshipsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 149087659 LIMIT 1[0m
+Completed 200 OK in 2.9ms (Views: 2.3ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 149087659]]
+Processing by UserFriendshipsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 149087659 LIMIT 1[0m
+Completed 200 OK in 2.0ms (Views: 1.4ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by UserFriendshipsController#new as HTML
+Completed 401 Unauthorized in 0.2ms
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "statuses"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id", "user_id") VALUES ('MyText', '2014-05-30 15:02:18', '2014-05-30 15:02:18', 980190962, 149087659)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id", "user_id") VALUES ('MyText', '2014-05-30 15:02:18', '2014-05-30 15:02:18', 298486374, 149087659)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id", "user_id") VALUES ('My status', '2014-05-30 15:02:18', '2014-05-30 15:02:18', 113629430, 1027431151)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "user_friendships"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "user_friendships" ("created_at", "updated_at", "id", "user_id", "friend_id") VALUES ('2014-05-30 15:02:18', '2014-05-30 15:02:18', 980190962, 149087659, 1027431151)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "users"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "created_at", "updated_at", "id") VALUES ('Jason', 'Seifer', 'jason@teamtreehouse.com', 'jasonseifer', '2014-05-30 15:02:18', '2014-05-30 15:02:18', 149087659)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "created_at", "updated_at", "id") VALUES ('Jim', 'Hoskins', 'jim@teamtreehouse.com', 'jimhoskins', '2014-05-30 15:02:18', '2014-05-30 15:02:18', 1027431151)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "created_at", "updated_at", "id") VALUES ('Mike', 'The Frog', 'mike@teamtreehouse.com', 'mikethefrog', '2014-05-30 15:02:18', '2014-05-30 15:02:18', 350169046)[0m
+  [1m[35m (1.8ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 149087659]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 350169046]]
+Processing by UserFriendshipsController#create as HTML
+  Parameters: {"friend_id"=>"350169046"}
+Redirected to http://test.host/
+Completed 302 Found in 0.6ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 149087659]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 350169046]]
+Processing by UserFriendshipsController#create as HTML
+  Parameters: {"friend_id"=>"350169046"}
+Redirected to http://test.host/
+Completed 302 Found in 0.3ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 149087659]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 350169046]]
+Processing by UserFriendshipsController#create as HTML
+  Parameters: {"friend_id"=>"350169046"}
+Redirected to http://test.host/
+Completed 302 Found in 0.2ms (ActiveRecord: 0.0ms)
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" INNER JOIN "user_friendships" ON "users"."id" = "user_friendships"."friend_id" WHERE "user_friendships"."user_id" = 149087659 AND "users"."id" = 350169046 LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 149087659]]
+Processing by UserFriendshipsController#create as HTML
+Redirected to http://test.host/
+Completed 302 Found in 0.2ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 149087659]]
+Processing by UserFriendshipsController#create as HTML
+Redirected to http://test.host/
+Completed 302 Found in 0.3ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Processing by UserFriendshipsController#new as HTML
+Completed 401 Unauthorized in 1.4ms
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 149087659]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1027431151]]
+Processing by UserFriendshipsController#new as HTML
+  Parameters: {"friend_id"=>"1027431151"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 149087659 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."profile_name" = '1027431151' LIMIT 1
+Completed 404 Not Found in 7.7ms (Views: 5.6ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 149087659]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1027431151]]
+Processing by UserFriendshipsController#new as HTML
+  Parameters: {"friend_id"=>"1027431151"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 149087659 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."profile_name" = '1027431151' LIMIT 1
+Completed 404 Not Found in 2.5ms (Views: 1.6ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 149087659]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1027431151]]
+Processing by UserFriendshipsController#new as HTML
+  Parameters: {"friend_id"=>"1027431151"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 149087659 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."profile_name" = '1027431151' LIMIT 1
+Completed 404 Not Found in 3.3ms (Views: 2.3ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 149087659]]
+Processing by UserFriendshipsController#new as HTML
+  Parameters: {"friend_id"=>"invalid"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 149087659 LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."profile_name" = 'invalid' LIMIT 1[0m
+Completed 404 Not Found in 4.3ms (Views: 1.7ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 149087659]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1027431151]]
+Processing by UserFriendshipsController#new as HTML
+  Parameters: {"friend_id"=>"1027431151"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 149087659 LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."profile_name" = '1027431151' LIMIT 1[0m
+Completed 404 Not Found in 4.0ms (Views: 2.4ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 149087659]]
+Processing by UserFriendshipsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 149087659 LIMIT 1[0m
+Completed 200 OK in 3.1ms (Views: 2.4ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 149087659]]
+Processing by UserFriendshipsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 149087659 LIMIT 1[0m
+Completed 200 OK in 2.6ms (Views: 1.9ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by UserFriendshipsController#new as HTML
+Completed 401 Unauthorized in 0.4ms
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM "statuses"
+  [1m[36mFixture Insert (0.3ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id", "user_id") VALUES ('MyText', '2014-05-30 15:52:46', '2014-05-30 15:52:46', 980190962, 149087659)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id", "user_id") VALUES ('MyText', '2014-05-30 15:52:46', '2014-05-30 15:52:46', 298486374, 149087659)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id", "user_id") VALUES ('My status', '2014-05-30 15:52:46', '2014-05-30 15:52:46', 113629430, 1027431151)[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "user_friendships"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "user_friendships" ("created_at", "updated_at", "id", "user_id", "friend_id") VALUES ('2014-05-30 15:52:46', '2014-05-30 15:52:46', 980190962, 149087659, 1027431151)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "users"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "created_at", "updated_at", "id") VALUES ('Jason', 'Seifer', 'jason@teamtreehouse.com', 'jasonseifer', '2014-05-30 15:52:46', '2014-05-30 15:52:46', 149087659)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "created_at", "updated_at", "id") VALUES ('Jim', 'Hoskins', 'jim@teamtreehouse.com', 'jimhoskins', '2014-05-30 15:52:46', '2014-05-30 15:52:46', 1027431151)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "users" ("first_name", "last_name", "email", "profile_name", "created_at", "updated_at", "id") VALUES ('Mike', 'The Frog', 'mike@teamtreehouse.com', 'mikethefrog', '2014-05-30 15:52:46', '2014-05-30 15:52:46', 350169046)[0m
+  [1m[35m (1.8ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 149087659]]
+Started POST "/login" for 127.0.0.1 at 2014-05-30 16:52:46 +0100
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"user"=>{"email"=>"jason@teamtreehouse.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'jason@teamtreehouse.com' LIMIT 1[0m
+Completed 401 Unauthorized in 6.3ms
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"user"=>{"email"=>"jason@teamtreehouse.com", "password"=>"[FILTERED]"}}
+  Rendered devise/shared/_links.erb (1.2ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (26.4ms)
+Completed 200 OK in 36.8ms (Views: 33.7ms | ActiveRecord: 0.0ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1027431151]]
+Started GET "/user_friendships/new?friend_id=jimhoskins" for 127.0.0.1 at 2014-05-30 16:52:46 +0100
+Processing by UserFriendshipsController#new as HTML
+  Parameters: {"friend_id"=>"jimhoskins"}
+Completed 401 Unauthorized in 0.4ms
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m

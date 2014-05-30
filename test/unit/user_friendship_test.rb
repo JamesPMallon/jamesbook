@@ -4,10 +4,8 @@ class UserFriendshipTest < ActiveSupport::TestCase
   should belong_to(:user)
   should belong_to(:friend)
 
-  test "that creating a friendship works without raising an exception" do
-  	assert_nothing_raised do 
+  test "that creating a friendship works" do
     UserFriendship.create user: users(:jason), friend: users(:mike)
-    # assert users(:jason).friends.include?(users(:mike))
-  	end
+    assert users(:jason).friends.include?(users(:mike))
   end
 end
