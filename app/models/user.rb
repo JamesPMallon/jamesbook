@@ -42,4 +42,11 @@ class User < ActiveRecord::Base
   #FRIENDSHIPS
 has_many :user_friendships
 has_many :friends, through: :user_friendships
+
+#PROFILE PAGE
+  def to_param
+    profile_name
+  end
+
+
 end

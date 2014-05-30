@@ -4,10 +4,7 @@
 
 <div class="page-header">
 	<h1><%= @user.full_name %></h1>
-	<% if user_signed_in? %>
-		<%= link_to "Edit User", edit_user_registration_path %>
-	<% end %>
-	
+  <%= link_to "Add Friend", new_user_friendship_path(friend_id: @user), class: "btn btn-info" %>
 </div>
 
 
